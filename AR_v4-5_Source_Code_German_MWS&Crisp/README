@@ -1,0 +1,14 @@
+Unfortunately we did not have these sources available when we started working on the
+CyberpunX Replay but got ahold of them about a year after the first working and assembleable
+resource was done.
+
+MWS and Crisp resourced a v4 version and added quite a few comments but moving the assembled
+output within the ROM will likely fail (due to the resource not being "complete" at some places).
+Their resourced and translated to german version was sold in germany as some v5 professional ROM and
+allowed us to take over some comments from their source.
+
+The source code is in Turbo Assembler format and assembles OK but requires the correct code of the
+IO areas from the cart it was resourced from since they were not included when obtaining these sources.
+
+Trying to add the right roms here soonish, but not currently having a suitable IO ROM piece also means
+that the collection is not yet complete :(

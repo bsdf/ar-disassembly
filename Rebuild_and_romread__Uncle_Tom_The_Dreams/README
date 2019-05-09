@@ -1,0 +1,46 @@
+Note from a developer: DO NOT USE ROM ROUTINES DIRECTLY. SURE TO FAIL ON OTHER ROMS!
+
+Hi Leute !
+
+Hier ein paar Infos ber die Action Replay V6, die ich mal zusammengetragen
+habe. Sicherlich interessant fr Coder, die selber Programme fr die AR
+schreiben wollen.
+
+Erst einmal beginnen alle Programmnamen, die als Parameter aus dem
+Freezermen geladen werden sollen, mit dem Krzel "E." .
+Die Programme starten grunds„tzlich bei $0A00 und drfen nicht ber die
+Speicherzelle $14FF hinausgehen.
+
+Einige ROM-Routinen :
+
+$8784 :         Tastaturabfrage im Freezer-Men
+$88BF :         Hierher wird bei "F7" verzweigt (Show Screen)
+$883A :         Restauriert den Screen
+$8843 :         Restauriert das Farb-RAM
+$884B :         Holt das Farb-RAM und rettet es
+
+Einige interessante Adressen :
+
+$0872 :         Startadresse Video-RAM
+$0873 :         Startadresse Bitmap (wenn eingeschaltet)
+$0874 :         Startadresse Zeichensatz
+$0875 :         War der Bitmap-Modus eingeschaltet, steht hier eine 3
+$0877 :         Ger„teadresse
+
+Die folgenden Routinen erm”glichen das Lesen und Beschreiben des
+eingefrorenen Speichers :
+
+JSR $02A7   wirkt wie       LDA ($8E),Y
+JSR $02b3   wirkt wie       STA ($8E),Y
+
+
+Ok, das w„re es erst mal, eigenen Versuchen sind natrlich keine Grenzen
+gesetzt, w„re sch”n, wenn ihr mich unterrichten wrdet, wenn ihr was neues
+ber die AR herausgefunden habt !!
+
+
+
+        Uncle Tom/The Dreams
+
+eMail : tomdreamer@aol.com
+
